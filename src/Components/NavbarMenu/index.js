@@ -1,16 +1,19 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const DNavbar = styled.div`
+export const NavbarContainer = styled.div`
   @media (max-width: 769px) {
     display: none;
   }
   @media (min-width: 769px) {
-    display: flex;
+    display: block;
   }
+`
+export const DNavbar = styled.div`
+
 `;
 export const DNavbarLogo = styled.div`
-  max-widht: 100%;
+  max-width: 100%;
 `;
 export const DNavbarLogoImage = styled.img``;
 export const DNavbarLocation = styled.div``;
@@ -67,4 +70,21 @@ export const MNavbarInput = styled.input`
 export const MNavbarInputIcon = styled.label`
   position: absolute;
   transform: translate(10px, 6.5px);
+`;
+
+export const FormContainer = styled.div``
+export const DNavbarInput = styled.input`
+  padding: 0.5rem 2.5rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #495057;
+  background-color: #e9ecef;
+  outline: none;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+`;
+export const DNavbarInputIcon = styled.label`
+  position: absolute;
+  transform: translate(10px, 9px);
 `;
