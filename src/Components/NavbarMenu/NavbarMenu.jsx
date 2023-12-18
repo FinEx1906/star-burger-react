@@ -46,7 +46,7 @@ const NavbarMenu = () => {
                 <i className="fa fa-cart-shopping"></i>
               </DNavbarNotificationBorder>
             </DNavbarNotificationLink>
-            <DNavbarNotificationLink>
+            <DNavbarNotificationLink to={"/login"}>
               <DNavbarNotificationBorder>
                 <i className="fa-regular fa-user"></i>
               </DNavbarNotificationBorder>
