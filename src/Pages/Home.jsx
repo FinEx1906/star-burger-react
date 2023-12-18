@@ -25,11 +25,16 @@ const Home = () => {
         <Adsense />
       </div> */}
       {/* /////////////////// FOOD CARDS /////////////////// */}
-      <div className="container my-4">
+      <div className="container my-4" style={{ zIndex: "-1" }}>
         <section className="food-menu">
           <h3 className="text-uppercase fw-bolder">PREMIUM BURGER</h3>
         </section>
-        <section className="cards">
+        <section className="cards flex-wrap my-3 d-flex justify-content-between align-items-center w-100">
+          <FoodCard />
+          <FoodCard />
+          <FoodCard />
+          <FoodCard />
+          <FoodCard />
           <FoodCard />
         </section>
       </div>
