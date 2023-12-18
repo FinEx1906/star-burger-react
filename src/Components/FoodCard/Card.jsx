@@ -1,5 +1,14 @@
 import React from "react";
-import { CardContainer, CardImg } from ".";
+import {
+  CardContainer,
+  CardImg,
+  DeliverContentt,
+  ExportOrder,
+  OrderButton,
+  OrderDeliver,
+  OrderPrice,
+  OrderPriceContainer,
+} from ".";
 import { FoodName, FoodNameSection } from "../BottomNavbar";
 
 const FoodCard = () => {
@@ -16,6 +25,18 @@ const FoodCard = () => {
         <FoodNameSection className="my-2">
           <FoodName>Pitsali burger, qo'shimcha coca-cola</FoodName>
         </FoodNameSection>
+        <OrderDeliver>
+          <DeliverContentt>Yetkazish: 3 000 so'm</DeliverContentt>
+        </OrderDeliver>
+        <ExportOrder className="d-flex align-items-center justify-content-between my-2">
+          <OrderPriceContainer>
+            <OrderPrice>17 000 so'm</OrderPrice>
+            <OrderPrice>15 000 so'm</OrderPrice>
+          </OrderPriceContainer>
+          <OrderButton className="outline-0 bg-body fs-1">
+            <i style={{ color: "#000000bd" }} class="bx bx-store"></i>
+          </OrderButton>
+        </ExportOrder>
       </CardContainer>
     </>
   );
