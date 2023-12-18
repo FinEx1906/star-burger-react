@@ -12,3 +12,19 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+@media (max-width: 800px) {
+  .ads-carousel img {
+    height: 250px !important;
+  }
+}
+@media (max-width: 450px) {
+  .ads-carousel img {
+    height: 200px !important;
+  }
+}
+@media (max-width: 350px) {
+  .ads-carousel img {
+    height: 150px !important;
+  }
+}

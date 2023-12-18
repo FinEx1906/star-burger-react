@@ -36,7 +36,7 @@ const FoodCard = () => {
             <OrderPrice>15 000 so'm</OrderPrice>
           </OrderPriceContainer>
           <OrderButton className="outline-0 bg-body fs-1">
-            <i style={{ color: "#000000bd" }} class="bx bx-store"></i>
+            <i style={{ color: "#000000bd" }} className="bx bx-store"></i>
           </OrderButton>
         </ExportOrder>
       </CardContainer>

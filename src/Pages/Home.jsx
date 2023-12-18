@@ -1,9 +1,9 @@
 import NavbarMenu from "../Components/NavbarMenu/NavbarMenu";
-// import Adsense from "../Components/Adsense/Adsense";
 import FoodCard from "../Components/FoodCard/Card";
 import Footer from "../Components/Footer/Footer";
 import BottomNavbar from "../Components/BottomNavbar/BottomNavbar";
 import { BottomNavbarContainer } from "../Components/BottomNavbar";
+// import Adsense from "../Components/Adsense/Adsense";
 const Home = () => {
   return (
     <>
@@ -16,14 +16,20 @@ const Home = () => {
         <div className="navbar-menu">
           <NavbarMenu />
         </div>
+        {/* /////////////////// ADS CAROUSEL /////////////////// */}
+        <div className="ads-carousel">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/596/763/771/artwork-painting-nighthawks-edward-hopper-wallpaper-preview.jpg"
+            alt=""
+            style={{
+              width: "100%",
+              height: "400px",
+              objectFit: "cover",
+              borderRadius: "0.25rem",
+            }}
+          />
+        </div>
       </div>
-      {/* /////////////////// ADS CAROUSEL /////////////////// */}
-      {/* <div
-        className="container my
-      -3"
-      >
-        <Adsense />
-      </div> */}
       {/* /////////////////// FOOD CARDS /////////////////// */}
       <div className="container my-4" style={{ zIndex: "-1" }}>
         <section className="food-menu">
