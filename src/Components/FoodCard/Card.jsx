@@ -30,7 +30,9 @@ const FoodCard = () => {
         </OrderDeliver>
         <ExportOrder className="d-flex align-items-center justify-content-between my-2">
           <OrderPriceContainer>
-            <OrderPrice>17 000 so'm</OrderPrice>
+            <OrderPrice className="opacity-50">
+              <strike>17 000 so'm</strike>
+            </OrderPrice>
             <OrderPrice>15 000 so'm</OrderPrice>
           </OrderPriceContainer>
           <OrderButton className="outline-0 bg-body fs-1">

@@ -8,10 +8,8 @@ export const NavbarContainer = styled.div`
   @media (min-width: 769px) {
     display: block;
   }
-`
-export const DNavbar = styled.div`
-
 `;
+export const DNavbar = styled.div``;
 export const DNavbarLogo = styled.div`
   max-width: 100%;
 `;
@@ -72,7 +70,7 @@ export const MNavbarInputIcon = styled.label`
   transform: translate(10px, 6.5px);
 `;
 
-export const FormContainer = styled.div``
+export const FormContainer = styled.div``;
 export const DNavbarInput = styled.input`
   padding: 0.5rem 2.5rem;
   margin-bottom: 0;

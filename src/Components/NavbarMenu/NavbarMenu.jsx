@@ -60,9 +60,11 @@ const NavbarMenu = () => {
               style={{ color: "rgb(73 80 87 / 70%)" }}
             ></i>
           </DNavbarInputIcon>
-          <DNavbarInput className="w-100"
+          <DNavbarInput
+            className="w-100"
             type="search"
-            placeholder="Taom, mahsulotlarni izlang" />
+            placeholder="Taom, mahsulotlarni izlang"
+          />
         </FormContainer>
       </NavbarContainer>
       <MNavbar className="my-2">
