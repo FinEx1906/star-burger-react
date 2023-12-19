@@ -9,9 +9,9 @@ const BottomNavbar = () => {
     setActiveButton(buttonName);
   };
 
-  const renderButton = (buttonName, iconClass, label) => (
+  const renderButton = (buttonName, iconClass, label, path) => (
     <Link
-      to={"/"}
+      to={path}
       onClick={() => handleButtonClick(buttonName)}
       className={`buttons text-dark ${
         activeButton === buttonName ? "text-danger" : "opacity-50"
@@ -27,17 +27,15 @@ const BottomNavbar = () => {
   );
 
   return (
-    <>
-      <NavbarBottom>
-        <div className="navbar w-100 p-1 py-3">
-          {renderButton("home", "bx-home-circle", "Bosh Sahifa")}
-          {renderButton("search", "bx-search-alt", "Katalog")}
-          {renderButton("bag", "bx-shopping-bag", "Savat")}
-          {renderButton("heart", "bx-heart-circle", "Tanlangan")}
-          {renderButton("user", "bx-user-circle", "Kabinet")}
-        </div>
-      </NavbarBottom>
-    </>
+    <NavbarBottom>
+      <div className="navbar w-100 p-1 py-3">
+        {renderButton("home", "bx-home-circle", "Bosh Sahifa", "/")}
+        {renderButton("search", "bx-search-alt", "Katalog", "/katalog")}
+        {renderButton("bag", "bx-shopping-bag", "Savat", "/savat")}
+        {renderButton("heart", "bx-heart-circle", "Tanlangan", "/tanlangan")}
+        {renderButton("user", "bx-user-circle", "Kabinet", "/kabinet")}
+      </div>
+    </NavbarBottom>
   );
 };
 
