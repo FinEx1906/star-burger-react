@@ -47,10 +47,10 @@ const BottomNavbar = () => {
     <NavbarBottom>
       <div className="navbar w-100 p-1 py-3">
         {renderButton("home", "bx-home-circle", "Bosh Sahifa", "/")}
-        {renderButton("search", "bx-search-alt", "Katalog", "/katalog")}
-        {renderButton("bag", "bx-shopping-bag", "Savat", "/savat", 14)}{" "}
-        {renderButton("heart", "bx-heart-circle", "Tanlangan", "/tanlangan")}
-        {renderButton("user", "bx-user-circle", "Kabinet", "/kabinet")}
+        {renderButton("search", "bx-search-alt", "Katalog", "/")}
+        {renderButton("bag", "bx-shopping-bag", "Savat", "/", 14)}{" "}
+        {renderButton("heart", "bx-heart-circle", "Tanlangan", "/")}
+        {renderButton("user", "bx-user-circle", "Kabinet", "/login")}
       </div>
     </NavbarBottom>
   );
