@@ -6,11 +6,11 @@ import { Route, Routes } from "react-router";
 import Login from "./Pages/Auth/Login/Login.jsx";
 
 export default function main() {
-  return (
+  return(
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<Login />}/>
     </Routes>
-  );
+  )
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
