@@ -1,12 +1,18 @@
+// App.jsx
 import React from "react";
 import Home from "./Pages/Home";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./Pages/Auth/Login/Login";
+
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Home />
-      </BrowserRouter>  
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { NavbarBottom } from ".";
+import { NavbarBottom } from "./index";
 
 const BottomNavbar = () => {
   const [activeButton, setActiveButton] = useState(null);
@@ -9,7 +9,7 @@ const BottomNavbar = () => {
     setActiveButton(buttonName);
   };
 
-  const renderButton = (buttonName, iconClass, label, path) => (
+  const renderButton = (buttonName, iconClass, label, path, badge) => (
     <Link
       to={path}
       onClick={() => handleButtonClick(buttonName)}
@@ -22,6 +22,23 @@ const BottomNavbar = () => {
       </button>
       <section>
         <span style={{ fontSize: "15px", letterSpacing: "-1px" }}>{label}</span>
+        {badge && (
+          <span
+            className="badge text-light position-absolute"
+            style={{
+              background: "black",
+              transform: "translate(21px, -68px)",
+              borderRadius: "100%",
+              width: "21px",
+              height: "21px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {badge}
+          </span>
+        )}
       </section>
     </Link>
   );
@@ -31,7 +48,7 @@ const BottomNavbar = () => {
       <div className="navbar w-100 p-1 py-3">
         {renderButton("home", "bx-home-circle", "Bosh Sahifa", "/")}
         {renderButton("search", "bx-search-alt", "Katalog", "/katalog")}
-        {renderButton("bag", "bx-shopping-bag", "Savat", "/savat")}
+        {renderButton("bag", "bx-shopping-bag", "Savat", "/savat", 14)}{" "}
         {renderButton("heart", "bx-heart-circle", "Tanlangan", "/tanlangan")}
         {renderButton("user", "bx-user-circle", "Kabinet", "/kabinet")}
       </div>
