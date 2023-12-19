@@ -1,0 +1,59 @@
+.loginContainer {
+  height: 100vh;
+}
+.login .input {
+  margin: 15px 0;
+  color: #c2c3cb;
+  font-size: 16.676px;
+  font-weight: 600;
+  letter-spacing: 1.167px;
+}
+.login .input input {
+  background: #f5f5f5;
+  border-radius: 14.275px;
+  border: none;
+  outline: none;
+  width: 252.441px;
+  height: 54.487px;
+  padding: 0 40px;
+}
+
+.login .input label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(11px, 15.5px);
+  font-size: 20px;
+}
+.loginContainer .login .login-header h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #323142;
+}
+.loginContainer .login section button {
+  width: 382.441px;
+  height: 74.487px;
+  width: 252.441px;
+  height: 54.487px;
+  border: 0;
+  outline: 0;
+  border-radius: 15.564px;
+  background: #6c5fbc;
+  color: #f3f5f6;
+  font-size: 17.788px;
+  letter-spacing: 0.534px;
+  text-transform: uppercase;
+}
+.loginContainer .login section span {
+  color: #3e3e3e;
+  margin: 10px 0;
+  display: block;
+  font-size: 13.9px;
+  font-weight: 400;
+  /* letter-spacing: 0.189px; */
+}
+.loginContainer .login section span a {
+  color: #6c5fbc;
+  font-weight: 700;
+  text-decoration: none;
+}
