@@ -8,12 +8,12 @@
   font-weight: 600;
   letter-spacing: 1.167px;
 }
-.login .input input {
+.login .input input, textarea {
   background: #f5f5f5;
   border-radius: 14.275px;
   border: none;
   outline: none;
-  width: 252.441px;
+  width: 262.441px;
   height: 54.487px;
   padding: 0 40px;
 }
@@ -33,7 +33,7 @@
 .loginContainer .login section button {
   width: 382.441px;
   height: 74.487px;
-  width: 252.441px;
+  width: 262.441px;
   height: 54.487px;
   border: 0;
   outline: 0;

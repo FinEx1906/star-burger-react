@@ -11,7 +11,12 @@ import {
 } from ".";
 import { FoodName, FoodNameSection } from "../BottomNavbar";
 
-const FoodCard = () => {
+const FoodCard = ({ cardCountProps }) => {
+  const orderButton = () => {
+    cardCountProps();
+  };
+  console.log(cardCountProps);
+  console.log(orderButton);
   return (
     <>
       <CardContainer className="card my-2 border-0">
@@ -35,7 +40,7 @@ const FoodCard = () => {
             </OrderPrice>
             <OrderPrice>15 000 so'm</OrderPrice>
           </OrderPriceContainer>
-          <OrderButton className="outline-0 bg-body fs-1">
+          <OrderButton className="outline-0 bg-body fs-1" onClick={orderButton}>
             <i style={{ color: "#000000bd" }} className="bx bx-store"></i>
           </OrderButton>
         </ExportOrder>

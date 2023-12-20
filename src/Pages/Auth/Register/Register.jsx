@@ -24,6 +24,7 @@ const Login = () => {
     } else {
       toast.success("Hisob yaratildi!");
     }
+    window.location.href = "/location";
   };
 
   return (

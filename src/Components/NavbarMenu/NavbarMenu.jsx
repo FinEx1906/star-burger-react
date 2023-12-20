@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   DNavbar,
@@ -21,7 +21,15 @@ import {
 } from "./index";
 import Logo from "../../images/Brand.svg";
 import Location from "../../images/icon/location.svg";
+import FoodCard from "../FoodCard/Card";
+// import FoodCard from "../FoodCard/Card";
+
 const NavbarMenu = () => {
+  const [notificationCount, setNotificationCount] = useState(0);
+  const cardCountProps = () => {
+    setNotificationCount(notificationCount + 1);
+  };
+  console.log(notificationCount);
   return (
     <>
       <NavbarContainer>
@@ -44,8 +52,27 @@ const NavbarMenu = () => {
             <DNavbarNotificationLink>
               <DNavbarNotificationBorder>
                 <i className="fa fa-cart-shopping"></i>
+                <span
+                  className="badge text-light position-absolute"
+                  style={{
+                    background: "#4e40a1",
+                    transform: "translate(21px, -15px)",
+                    borderRadius: "100%",
+                    width: "21px",
+                    height: "21px",
+                    display: "flex",
+                    alignItems: "center",
+                    fontSize: "12px",
+                    justifyContent: "center",
+                  }}
+                >
+                  {notificationCount}
+                </span>
               </DNavbarNotificationBorder>
             </DNavbarNotificationLink>
+
+            {/* <FoodCard cardCountProps={cardCountProps} /> */}
+
             <DNavbarNotificationLink to={"/login"}>
               <DNavbarNotificationBorder>
                 <i className="fa-regular fa-user"></i>

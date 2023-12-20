@@ -39,9 +39,6 @@ const Home = () => {
           <FoodCard />
           <FoodCard />
           <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
         </section>
       </div>
       {/* /////////////////// FOOTER /////////////////// */}

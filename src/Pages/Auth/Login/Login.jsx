@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,6 +29,16 @@ const Login = () => {
     toast.success("Hisobga kirish muvaffaqiyatli!");
   };
 
+  const emailInputStyle =
+    email === "coder@gmail.com"
+      ? { borderColor: "green" }
+      : { borderColor: "red" };
+  const passwordInputStyle =
+    password === "112233" ? { borderColor: "green" } : { borderColor: "red" };
+  const checkPassword =
+    confirmPassword === password
+      ? { borderColor: "green" }
+      : { borderColor: "red" };
   return (
     <>
       <div className="loginContainer d-flex align-items-center justify-content-center">
@@ -46,6 +57,7 @@ const Login = () => {
                 placeholder="Emailingizni kiriting"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                style={emailInputStyle}
               />
             </section>
             <section className="input">
@@ -58,6 +70,7 @@ const Login = () => {
                 placeholder="Parolingizni kiriting"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                style={passwordInputStyle}
               />
             </section>
             <section className="input">
@@ -70,6 +83,7 @@ const Login = () => {
                 placeholder="Parolingizni tasdiqlang"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
+                style={checkPassword}
               />
             </section>
             <section className="d-flex align-items-center justify-content-center">
